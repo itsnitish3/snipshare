@@ -1,0 +1,24 @@
+<div class="row mt-5">
+    <div class="col-md-6 m-auto">
+        <div class="card card-body">
+            <h1 class="text-center mb-3">create Text Snippet</h1>
+            <% include ./messages %>
+                <form action="snippet/createsnippets" method="POST">
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Large textarea</label>
+                        <textarea class="form-control rounded-0"  name="text" id="exampleFormControlTextarea1" rows="10"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="securityKey">key for Encryption and decryption</label>
+                        <input type="name" class="form-control" name="key" id="key" placeholder="Enter key">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                            else.</small>
+                    </div>
+                       
+                    <button type="submit" class="btn btn-primary btn-block">create</button>
+                </form>
+
+        </div>
+    </div>
+</div>
